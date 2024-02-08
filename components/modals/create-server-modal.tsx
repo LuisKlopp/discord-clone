@@ -61,6 +61,7 @@ export const CreateServerModal = () => {
 
       form.reset();
       router.refresh();
+      onClose();
     } catch (error) {
       console.log(error);
     }
@@ -82,7 +83,7 @@ export const CreateServerModal = () => {
             Customize your server
           </DialogTitle>
           <DialogDescription className="text-center text-zinc-500">
-            Giver your server a personality with a
+            Give your server a personality with a
             name and an image. You can always
             change it later
           </DialogDescription>

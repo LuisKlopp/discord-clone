@@ -13,6 +13,7 @@ import {
   Mic,
   Trash,
   Video,
+  Lock,
 } from "lucide-react";
 import {
   useParams,
@@ -72,6 +73,9 @@ export const ServerChannel = ({
             </ActionTooltip>
           </div>
         )}
+      {channel.name === "general" && (
+        <Lock className="ml-auto w-4 h-4 text-zinc-500 dark:text-zinc-400" />
+      )}
     </button>
   );
 };

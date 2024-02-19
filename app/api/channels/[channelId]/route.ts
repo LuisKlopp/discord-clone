@@ -29,7 +29,7 @@ export async function DELETE(
     if (!params.channelId) {
       return new NextResponse(
         "Channel ID missing",
-        { status: 401 },
+        { status: 400 },
       );
     }
 
@@ -48,7 +48,6 @@ export async function DELETE(
           },
         },
       },
-
       data: {
         channels: {
           delete: {

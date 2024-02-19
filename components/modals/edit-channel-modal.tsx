@@ -84,7 +84,6 @@ export const EditChannelModal = () => {
         },
       });
       await axios.patch(url, values);
-
       form.reset();
       router.refresh();
       onClose();

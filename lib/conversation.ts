@@ -33,7 +33,7 @@ const findConversation = async (
       where: {
         AND: [
           { memberOneId: memberOneId },
-          { memberOneId: memberTwoId },
+          { memberTwoId: memberTwoId },
         ],
       },
       include: {

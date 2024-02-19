@@ -43,7 +43,6 @@ const MemberIdPage = async ({
       params.memberId,
     );
 
-  console.log(conversation);
   if (!conversation) {
     return redirect(
       `/servers/${params.serverId}`,

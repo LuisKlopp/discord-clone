@@ -19,9 +19,9 @@ export const getOrCreateConversation = async (
       memberOneId,
       memberTwoId,
     );
-
-    return conversation;
   }
+
+  return conversation;
 };
 
 const findConversation = async (

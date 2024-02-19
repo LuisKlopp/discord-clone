@@ -117,7 +117,7 @@ export const ServerSidebar = async ({
                 ),
               },
               {
-                label: "Vocie Channels",
+                label: "Voice Channels",
                 type: "channel",
                 data: audioChannels?.map(
                   (channel) => ({

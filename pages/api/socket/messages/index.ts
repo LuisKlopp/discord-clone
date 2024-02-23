@@ -102,7 +102,6 @@ export default async function handler(
         },
       },
     });
-    return res.status(200).json(message);
 
     const channelKey = `chat:${channelId}:messages`;
 
@@ -110,6 +109,7 @@ export default async function handler(
       channelKey,
       message,
     );
+    return res.status(200).json(message);
   } catch (error) {
     console.log("[MESSAGES_POST]", error);
     return res

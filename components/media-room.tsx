@@ -1,4 +1,4 @@
-"use clinet";
+"use client";
 
 import { useEffect, useState } from "react";
 import {
@@ -29,7 +29,7 @@ export const MediaRoom = ({
 
     const name = `${user.firstName} ${user.lastName}`;
 
-    async () => {
+    (async () => {
       try {
         const resp = await fetch(
           `/api/livekit?room=${chatId}&username=${name}`,
@@ -39,7 +39,7 @@ export const MediaRoom = ({
       } catch (e) {
         console.log(e);
       }
-    };
+    })();
   }, [user?.firstName, user?.lastName, chatId]);
 
   if (token === "") {
